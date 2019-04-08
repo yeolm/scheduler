@@ -1,0 +1,21 @@
+<div>
+	<form ng-hide="userInfoHide" >
+        	<input  autocomplete="on"  class="input" ng-hide="loginEmailHide" ng-model="loginEmail" autofocus class="form-control" placeholder="Email" type="text"/>
+            <input class="input" ng-model="loginPassword" ng-hide="loginPasswordHide" placeholder="Password" type="password"/>
+            <button class="btn btn-primary" ng-hide="LoginButtonHide"ng-click="checkLoginInfo()" type="submit">Log in</button>
+            <input autocomplete="on" ng-hide="RecordEmailHide" ng-model="recordEmail" placeholder="Email" type="text"/>
+            <input autocomplete="on" ng-hide="RecordSurnameHide" ng-model="recordSurname" placeholder="Surname" type="text"/>
+            <input autocomplete="on" ng-hide="RecordDepartmentHide" ng-model="recordDepartment" placeholder="CE or 562" type="text"/>
+            <input autocomplete="on" ng-hide="RecordPasswordHide" ng-model="recordPassword" placeholder="Password" type="password"/>
+            <input autocomplete="on" ng-hide="RecordConfirmationHide" ng-model="recordConfirmation" placeholder="Confirmation" ng-style="{background:myColor}"type="password"/>
+            <button class="btn btn-primary" ng-hide="RecordButtonHide" ng-click="signIn()" type="submit">Sign In</button>                            
+     </form>
+     
+
+       
+      <div ng-hide="courseButtonsHide">
+      	<div class=w3-container align=center style=background-color:DarkBlue;><h3 class=text>Courses</h3></div>
+      </div>
+                    
+                    
+</div>
