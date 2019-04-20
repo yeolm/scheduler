@@ -197,6 +197,18 @@ app.controller('myCtrl', function($scope,$http,$window,$timeout) {
 		
 	
 	}
+	$scope.sendMail=function(){
+		let message=angular.element("#table").html();
+		$http.post("/sendEmail",message).then(function(response){
+			if(response.data["state"]=="1"){
+				alert("mail sended");
+			}
+			else if(response.data["state"]=="0")
+			{
+				alert("try again later");
+			}
+		});
+	}
 
 });
 function displaySchedule(){

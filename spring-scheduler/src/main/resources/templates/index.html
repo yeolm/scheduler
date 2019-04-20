@@ -24,6 +24,7 @@
         			</div>
         		<div align=center ><button type=button ng-click="newSchedule()">New Schedule</button>
         			<button type=button ng-click="saveSchedule()">Save Schedule</button>
+        			<button type=button ng-click="sendMail()">Send Mail</button>
         		</div>
       			</div>
       			<div ng-hide="myCoursesHide">
@@ -43,7 +44,7 @@
                
             </div>
 		
-            <div class="w3-half w3-container">
+            <div class="w3-half w3-container" id="table">
                 <table class="tablecolumn">
                     <tr>
                         <th></th>
