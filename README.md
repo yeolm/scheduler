@@ -5,4 +5,4 @@ Technologies:\
 -ElasticSearch for database\
 -RedisCache for session\
 -Angular js for client-side scripting\
-Live demo link:https://www.appdemostore.com/demo?id=4981862517702656
+https://youtu.be/k3aOEZEeII8
